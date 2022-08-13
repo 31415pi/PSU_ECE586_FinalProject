@@ -1,0 +1,8 @@
+cycles no fwd: 1707
+stalls: 554
+hazards: 307
+
+cycles fwd: 1213
+stalls: 60
+data hazard: 60
+ctrl: 119

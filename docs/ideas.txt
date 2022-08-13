@@ -1,0 +1,10 @@
+Tasks/Functions/Modules:
+* Trace Parsing
+* Instruction Decode
+* Hazard Detection (only worry about ex)
+    * Stall Counter (how long and why)
+* Print State (display memory, pipeline state)
+
+Plusargs:
+    * Forwarding / No Forwarding 
+    * Timing

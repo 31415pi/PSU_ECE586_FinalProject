@@ -1,0 +1,4696 @@
+vsim -c +MEM=./mem_images/final_proj_trace.txt +FWD=0 +TIMING=1 +DBG=0 work.mips_opt -do "run -all; exit" 
+Reading pref.tcl
+
+# 2019.2_1
+
+# vsim -c "+MEM=./mem_images/final_proj_trace.txt" "+FWD=0" "+TIMING=1" "+DBG=0" work.mips_opt -do "run -all; exit" 
+# Start time: 16:06:11 on Jun 01,2022
+# //  Questa Sim-64
+# //  Version 2019.2_1 linux_x86_64 May 13 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.mips_defs(fast)
+# ** Warning: (vsim-PLI-3691) Expected a system task, not a system function '$fgets'.
+#    Time: 0 ns  Iteration: 0  Region: /mips_defs::mips_simulator::new File: mips_simulator.sv Line: 105
+# Loading work.top(fast)
+# Loading work.MipsLite_top(fast)
+# run -all
+# ---INST OBJECT---
+# Op:   ADDI
+# rs:  0 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x324
+# ---INST OBJECT---
+# Op:   ADDI
+# rs:  0 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x63c
+# ---INST OBJECT---
+# Op:   ADDI
+# rs:  0 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x960
+# ---INST OBJECT---
+# Op:   ADDI
+# rs:  0 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0xc80
+# ---INST OBJECT---
+# Op:   ADDI
+# rs:  0 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0xffff
+# ---INST OBJECT---
+# Op:   SUBI
+# rs:  0 | Value: 0xx
+# rt: 20 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 20 | Value: 0xx
+# rt: 22 | Value: 0xx
+# Imm: 0x4e
+# ---INST OBJECT---
+# Op:   ADDI
+# rs:  0 | Value: 0xx
+# rt: 23 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:    ADD
+# rs: 19 | Value: 0xx
+# rt:  0 | Value: 0xx
+# rd: 24 | Value: 0xx
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:    MUL
+# rs: 17 | Value: 0xx
+# rt: 23 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:    ADD
+# rs: 17 | Value: 0xx
+# rt: 24 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:    MUL
+# rs: 17 | Value: 0xx
+# rt: 23 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:    ADD
+# rs: 17 | Value: 0xx
+# rt: 24 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:    MUL
+# rs: 17 | Value: 0xx
+# rt: 23 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:    ADD
+# rs: 17 | Value: 0xx
+# rt: 24 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:    MUL
+# rs: 17 | Value: 0xx
+# rt: 23 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:    ADD
+# rs: 17 | Value: 0xx
+# rt: 24 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:    MUL
+# rs: 17 | Value: 0xx
+# rt: 23 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:    ADD
+# rs: 17 | Value: 0xx
+# rt: 24 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:   MULI
+# rs: 17 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x2
+# ---INST OBJECT---
+# Op:     JR
+# rs: 22 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 11 | Value: 0xx
+# rt: 14 | Value: 0xx
+# Imm: 0xfffc
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 12 | Value: 0xx
+# rt: 15 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:    SUB
+# rs: 14 | Value: 0xx
+# rt: 15 | Value: 0xx
+# rd: 16 | Value: 0xx
+# ---INST OBJECT---
+# Op:     OR
+# rs: 16 | Value: 0xx
+# rt: 20 | Value: 0xx
+# rd: 21 | Value: 0xx
+# ---INST OBJECT---
+# Op:    BEQ
+# rs: 21 | Value: 0xx
+# rt: 19 | Value: 0xx
+# Imm: 0x3
+# ---INST OBJECT---
+# Op:    MUL
+# rs: 17 | Value: 0xx
+# rt: 23 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:    ADD
+# rs: 17 | Value: 0xx
+# rt: 24 | Value: 0xx
+# rd: 17 | Value: 0xx
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 11 | Value: 0xx
+# rt: 11 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 12 | Value: 0xx
+# rt: 12 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    STW
+# rs: 13 | Value: 0xx
+# rt: 17 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 13 | Value: 0xx
+# rt: 13 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:   ADDI
+# rs: 18 | Value: 0xx
+# rt: 18 | Value: 0xx
+# Imm: 0x4
+# ---INST OBJECT---
+# Op:    LDW
+# rs: 18 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x0
+# ---INST OBJECT---
+# Op:     BZ
+# rs: 25 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0xfff0
+# ---INST OBJECT---
+# Op:   XORI
+# rs: 25 | Value: 0xx
+# rt: 25 | Value: 0xx
+# Imm: 0x3f
+# ---INST OBJECT---
+# Op:   HALT
+# rs:  0 | Value: 0xx
+# rt:  0 | Value: 0xx
+# Imm: 0x0
+# -----DONE-----
+# 
+# ------INSTR COUNT------
+# Total Inst:         911 (1.00)
+# Arith Inst:         375 (0.41)
+# Logic Inst:          61 (0.07)
+# Mem Inst  :         300 (0.33)
+# Ctrl Inst :         175 (0.19)
+# 
+# --------TIMING---------
+# Cycles    :        1647
+# Stalls    :         494
+# Hazards   :         307
+# 
+# -----CURRENT STATE-----
+# PC  : 0x00000070 /          112
+# R 0 : 0x00000000 /            0
+# R 1 : 0x00000000 /            0
+# R 2 : 0x00000000 /            0
+# R 3 : 0x00000000 /            0
+# R 4 : 0x00000000 /            0
+# R 5 : 0x00000000 /            0
+# R 6 : 0x00000000 /            0
+# R 7 : 0x00000000 /            0
+# R 8 : 0x00000000 /            0
+# R 9 : 0x00000000 /            0
+# R10 : 0x00000000 /            0
+# R11 : 0x00000414 /         1044
+# R12 : 0x0000072c /         1836
+# R13 : 0x00000a50 /         2640
+# R14 : 0x00000019 /           25
+# R15 : 0xffffff44 /         -188
+# R16 : 0x000000d5 /          213
+# R17 : 0x0000001d /           29
+# R18 : 0x00000d70 /         3440
+# R19 : 0xffffffff /           -1
+# R20 : 0xfffffffe /           -2
+# R21 : 0xffffffff /           -1
+# R22 : 0x0000004c /           76
+# R23 : 0x00000003 /            3
+# R24 : 0xffffffff /           -1
+# R25 : 0x00000003 /            3
+# R26 : 0x00000000 /            0
+# R27 : 0x00000000 /            0
+# R28 : 0x00000000 /            0
+# R29 : 0x00000000 /            0
+# R30 : 0x00000000 /            0
+# R31 : 0x00000000 /            0
+# 
+# ------MEMORY STATE------
+# Address: 2400, Contents:           2
+# Address: 2404, Contents:           4
+# Address: 2408, Contents:           6
+# Address: 2412, Contents:           8
+# Address: 2416, Contents:          10
+# Address: 2420, Contents:          12
+# Address: 2424, Contents:          14
+# Address: 2428, Contents:          16
+# Address: 2432, Contents:          18
+# Address: 2436, Contents:          29
+# Address: 2440, Contents:          22
+# Address: 2444, Contents:          24
+# Address: 2448, Contents:          26
+# Address: 2452, Contents:          28
+# Address: 2456, Contents:          30
+# Address: 2460, Contents:          32
+# Address: 2464, Contents:          34
+# Address: 2468, Contents:          36
+# Address: 2472, Contents:          38
+# Address: 2476, Contents:          59
+# Address: 2480, Contents:          42
+# Address: 2484, Contents:          44
+# Address: 2488, Contents:          46
+# Address: 2492, Contents:          48
+# Address: 2496, Contents:          50
+# Address: 2500, Contents:          52
+# Address: 2504, Contents:          54
+# Address: 2508, Contents:          56
+# Address: 2512, Contents:          58
+# Address: 2516, Contents:          89
+# Address: 2520, Contents:          62
+# Address: 2524, Contents:          64
+# Address: 2528, Contents:          66
+# Address: 2532, Contents:          68
+# Address: 2536, Contents:          70
+# Address: 2540, Contents:          72
+# Address: 2544, Contents:          74
+# Address: 2548, Contents:          76
+# Address: 2552, Contents:          78
+# Address: 2556, Contents:         119
+# Address: 2560, Contents:          82
+# Address: 2564, Contents:          84
+# Address: 2568, Contents:          86
+# Address: 2572, Contents:          88
+# Address: 2576, Contents:          90
+# Address: 2580, Contents:          92
+# Address: 2584, Contents:          94
+# Address: 2588, Contents:          96
+# Address: 2592, Contents:          98
+# Address: 2596, Contents:         149
+# Address: 2600, Contents:           2
+# Address: 2604, Contents:           4
+# Address: 2608, Contents:           6
+# Address: 2612, Contents:           8
+# Address: 2616, Contents:          10
+# Address: 2620, Contents:          12
+# Address: 2624, Contents:          14
+# Address: 2628, Contents:          16
+# Address: 2632, Contents:          18
+# Address: 2636, Contents:          29
+#  exit
+# End time: 16:06:12 on Jun 01,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
